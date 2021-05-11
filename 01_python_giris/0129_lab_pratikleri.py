@@ -80,3 +80,16 @@ toplam_tuketim=(yakit_tuketimi*alinan_yol*miktar)/100
 print(toplam_tuketim)
 """
 # endregion
+
+# region odev
+"""
+urun = input("Lütfen Ürün adı girinizs\t:")
+adet = int(input(f"{urun}-satın alınacak adet\t\t:"))
+price = int(input("Lütfen ürün fiyatını giriniz\t:"))
+dsc = int(input("Lütfen indirim oranını giriniz\t:"))
+sale = ((price*adet)*(dsc))/100
+print(f"Ürünün toplam tutarı: {price*adet-sale}")
+"""
+# endregion
+
+# region odev
