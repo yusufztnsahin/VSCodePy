@@ -93,3 +93,4 @@ print(f"Ürünün toplam tutarı: {price*adet-sale}")
 # endregion
 
 # region odev
+print("ssss")
