@@ -93,4 +93,17 @@ print(f"Ürünün toplam tutarı: {price*adet-sale}")
 # endregion
 
 # region odev
-print("ssss")
+"""
+sayi1 = int(input("Lütfen 3 basamaklı ilk sayıyı giriniz\t: "))
+sayi2 = int(input("Lütfen 3 basamaklı ikinci sayıyı giriniz: "))
+sayi3 = int(input("Lütfen 3 basamaklı üçüncü sayıyı giriniz: "))
+print(f"Birler basamakları toplamı {sayi1%10+sayi2%10+sayi3%10}")
+"""
+# endregion
+
+# region odev
+"""
+sehir = input("Şehir adı giriniz :")
+print(f"{sehir} şehri {len(sehir)} karakterdir.")
+"""
+# endregion
