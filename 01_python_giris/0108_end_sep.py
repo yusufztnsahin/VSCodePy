@@ -17,14 +17,13 @@ print("Hayatta", "En", "Hakiki", "Mürşit", "İlimdir", sep="+")
 """
 
 
-
 """
 istanbul-teknopark
 ecodation>>eğitim>>kurumları.
 """
 
 print("istanbul", "teknopark", sep="-")
-print("ecodation","eğitim", "kurumları", sep=">>", end=".")
+print("ecodation", "eğitim", "kurumları", sep=">>", end=".")
 
 print("İstanbul", "Beşiktaş", sep='-', end='>>')
-print("Ecodation", "Eğitim", "Kurumları", sep='*',end='.')
+print("Ecodation", "Eğitim", "Kurumları", sep='*', end='.')
