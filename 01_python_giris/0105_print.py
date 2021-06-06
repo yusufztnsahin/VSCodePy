@@ -6,7 +6,6 @@ print → fonksiyondur. ne için kullanılır?
 """
 
 
-
 #print("aziz bektaş")
 #print("kocaeli üniv.")
 # comment line single

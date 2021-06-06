@@ -1,6 +1,6 @@
 # invoke
 
-#print()
+# print()
 """
 print("ecodation")
 print() # bir satır boş
@@ -19,10 +19,6 @@ print(True)
 print('Merhaba Ece\'nin Dünyası')
 print('Türkiyen\'nin Başkenti Ankara\'dır')
 """
-
-
-
-
 
 
 # ödev →

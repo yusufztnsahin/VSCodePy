@@ -1,2 +1,2 @@
 print("selam")
-#tüm kodlar sol kenara dayalı olmalı → indentation
+# tüm kodlar sol kenara dayalı olmalı → indentation

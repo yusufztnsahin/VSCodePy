@@ -1,4 +1,4 @@
-#region aritmetik-operatorler
+# region aritmetik-operatorler
 # aritmetik operatörler
 """
 1→  +   toplama
@@ -9,9 +9,9 @@
 6→  **  üst alma
 7→  %   mod alma
 """
-#endregion
+# endregion
 
-#region +/- binary
+# region +/- binary
 """
 print(3+3)
 print(6-3)
@@ -19,16 +19,16 @@ print(3-6)
 print(0.15 - 15)
 print(.15 - 15)
 """
-#endregion
+# endregion
 
-#region +/- unary işaret
+# region +/- unary işaret
 """
 print(+2)
 print(-2)
 """
-#endregion
+# endregion
 
-#region */ 
+# region */
 """
 print(4*4)
 print(.4*4)
@@ -39,9 +39,9 @@ print(type(9/2))
 print(17/.4)
 print(10/0)
 """
-#endregion
+# endregion
 
-#region ** üst alma
+# region ** üst alma
 """
 print(4**4)
 print(2**4)
@@ -49,9 +49,9 @@ print(16**0.5)
 print(16**(1/2))
 print(type(16**0.5))
 """
-#endregion
+# endregion
 
-#region // - tam bölme
+# region // - tam bölme
 """
 print(12/7)
 print(12//7)
@@ -59,19 +59,19 @@ print(12//7.)
 print(-13/5)
 print(-13//5) #*****
 """
-#endregion
+# endregion
 
-#region % - mod alma - kalanı bulma
+# region % - mod alma - kalanı bulma
 """
 print(15%4)
 print(15%2) #**********
 print(8%3)
 print(15%0)
 """
-#endregion
+# endregion
 
 
-#region operator_oncelikleri
+# region operator_oncelikleri
 """
 1→  +, -        unary
 2→  **          üst alma
@@ -84,8 +84,9 @@ print(15%4*2)   #% left-side binding
 print(15%4%2)   #% left-side binding
 print(2**2**3)  #** right-side binding
 """
-#endregion
+# endregion
 
+"""
 print(12/3)
 print(12/3.0)
 print(12/5)
@@ -94,3 +95,4 @@ print(.4*4)
 print(25**.5)
 print(12%5)
 print(-12%5)
+"""

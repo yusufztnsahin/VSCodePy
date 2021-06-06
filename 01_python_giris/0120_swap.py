@@ -1,4 +1,4 @@
-#region variable_swap
+# region variable_swap
 # değişken yer değiştirme
 # a değeri 25, b değeri 15
 """
@@ -10,4 +10,4 @@ b = temp
 a, b = b, a
 print("a değeri", a, " b değeri", b)
 """
-#endregion
+# endregion

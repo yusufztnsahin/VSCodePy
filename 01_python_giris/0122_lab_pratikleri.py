@@ -1,6 +1,6 @@
 # region ornek_1
 
-#delta örneği
+# delta örneği
 """
 a = 1
 b = 4
@@ -13,7 +13,7 @@ print("delta değeri " , delta)
 
 # region ornek_2
 
-#ortalama
+# ortalama
 """
 s1 = 2
 s2 = 4
@@ -25,7 +25,7 @@ print("oralama değeri ", ort)
 
 # region ornek_3
 
-#saat bilgisini saniyeye dönüştürsün
+# saat bilgisini saniyeye dönüştürsün
 """
 saat = 2
 saniye = 3600
@@ -53,8 +53,6 @@ print(sayi, " sayısının basamakları toplamı " , toplamDegeri)
 # endregion
 
 
-
-
 # ödev →
 """
 boy bilgisi girilen değeri; metre ve santimetre cinsinden ekrana yazınız.
@@ -76,8 +74,6 @@ Günlük; ...
 Haftalık; ...
 Aylık; ...
 """
-
-
 
 
 # ödev →

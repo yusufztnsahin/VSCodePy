@@ -4,7 +4,7 @@
 2- runtime da iken bu satırı yorumlama"!
 3- bu bir kod değil, bu kendim için yazdığım bir hatırlatma"! dersiniz.
 """
-#tek satır
+# tek satır
 """
 çoklu yorum satırı
 budur
@@ -13,7 +13,7 @@ budur
 buda olabilir
 '''
 
-# yazı ile 
+# yazı ile
 print("otuz dört")
 # sayı ile
 print(34)

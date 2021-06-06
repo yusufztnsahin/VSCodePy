@@ -1,4 +1,4 @@
-#region vscode_ile_github_kullanimiiiiii
+# region vscode_ile_github_kullanimiiiiii
 r"""
 Adım 1 → "git enable" seçili mi?
 Manage → Settings → arama: "git enable" → seçili olduğuna emin olalım
@@ -28,4 +28,4 @@ git config --global user.name "Your Name"
 C:\Program Files\Git> git config --global user.email "you@example.com"
 C:\Program Files\Git> git config --global user.name "Your Name"
 """
-#endregion
+# endregion
