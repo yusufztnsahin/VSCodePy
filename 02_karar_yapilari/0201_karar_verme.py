@@ -1,30 +1,16 @@
-# region karsilastirma_operatorleri_giris
+# region karar_verme_giris
+# şu ana kadar ne yaptık? programımız
 """
-KARŞILAŞTIRMA OPERATÖRLERİ
-1→  ==  eşittir
-2→  !=  eşit değildir
-3→  <   küçüktür
-4→  >   büyüktür
-5→  <=  küçük eşittir
-6→  >=  büyük eşittir
+1- aritmetik işlemler yaptı, 
+2- bize soru sorar, 
+3- verdiğimiz cevapları birleşetirdi, doğru formatta ekrana yazdır
 """
 # endregion
 
-# region ==
+# region karar_verme_asamasi
 """
-print(5 == 5)
-print(15 == 25)
-print("istanbul" == "istanbul")
-print("tuzla" == "Tuzla")
-print("meb" == "MEB")
-print(" " == " ")
+karar vermeyi nasıl yapacak?
+KARŞILAŞTIRMA OPERATÖRLERİ İLE
 """
 # endregion
 
-"""
-yaşınız: 17
-FALSE
-
-yas=int(input("yaşınız:"))
-print(yas<=17)
-"""

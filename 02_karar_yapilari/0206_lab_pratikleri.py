@@ -73,4 +73,3 @@ if ort >= 50:
     print(f"GEÇTİNİZ, ORTALAMANIZ {round(ort,2)}")
 """
 # endregion
-

@@ -27,6 +27,7 @@ print("f")
 +   0-100 arası yada 100+ olup/olmadığını bulan prog.
 +   ekrana kullanıcı dostu çıktı verecek
 """
+"""
 a = int(input("lütfen sayı giriniz \t : "))
 if a > 0:
     if a < 100:
@@ -35,5 +36,5 @@ if a > 0:
         print(f"{a} sayı 100 den büyüktür, pozitif")
 else:
     print("lütfen 0 yada negatif değer girmeyin")
-
+"""
 # endregion
