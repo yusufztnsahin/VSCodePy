@@ -1,4 +1,4 @@
-#region ornek_1
+# region ornek_1
 """
 n1, n2 = int(input("lütfen 1. snv notunu giriniz \t : ")), int(input("lütfen 2. snv notunu giriniz \t : "))
 ort = (n1+n2)/2
@@ -13,9 +13,9 @@ elif ort>=45:
 else:
     print(f"yıl sonu notunuz {ort}, başarı durumu GEÇEMEZ")
 """
-#endregion
+# endregion
 
-#region ornek_2
+# region ornek_2
 """
 s1 = int(input("l. s1. giriniz : "))
 s2 = int(input("l. s2. giriniz : "))
@@ -28,9 +28,9 @@ if s2<s3:
     s2, s3 = s3, s2
 print(f"{s1}>{s2}>{s3}")
 """
-#endregion
+# endregion
 
-#region ornek_3
+# region ornek_3
 """
 a = int(input("lütfen a kenarını giriniz \t : "))
 b = int(input("lütfen b kenarını giriniz \t : "))
@@ -39,9 +39,9 @@ if a==b:
 else:
     print(f"dikdörtgenin alanı {a*b}")
 """
-#endregion
+# endregion
 
-#region ornek_4
+# region ornek_4
 """
 kisaKenar = int(input("lütfen kısa kenarını giriniz \t : "))
 uzunKenar = int(input("lütfen uzun kenarını giriniz \t : "))
@@ -50,9 +50,9 @@ if kisaKenar>uzunKenar:
 else:
     print(f"dörtgenin çevresi {2*(kisaKenar + uzunKenar)}")
 """
-#endregion
+# endregion
 
-#region ornek_5
+# region ornek_5
 """
 a = int(input("lütfen 1. s giriniz \t : "))
 b = int(input("lütfen 2. s giriniz \t : "))
@@ -61,7 +61,7 @@ if a%b==0:
 else:
     print(f"{a} sayısı {b} sayısına tam bölünemez")
 """
-#endregion
+# endregion
 
 
 # ödev →
@@ -70,8 +70,15 @@ else:
         - Pozitifse karesini yazdırın.
         - Negatifse karekökünü yazdırın.
         - 0'sa sıfır yazsın
+        
+        sayi = int(input("lütfen bir sayı giriniz :\t"))
+if sayi > 0:
+    print(f"{sayi**2}")
+elif sayi < 0:
+    print(f"{sayi**.5}")
+else:
+    print(sayi)
 """
-
 
 
 # ödev →
@@ -82,8 +89,20 @@ else:
             %25 indirim yapılacaktır.
         - Değilse bişey yapılmayacak.
     - 150,300 -> Ürünlerin fiyatı .. TL ve .. TL'dir. İkinci ürüne
-     .. TL indirim yapılmıştır. Borcunuz : ..TL'dir.
+    .. TL indirim yapılmıştır. Borcunuz : ..TL'dir.
+
+urun1 = int(input("fiyatı giriniz: "))
+urun2 = int(input("fiyatı giriniz: "))
+toplam = urun1+urun2
+if toplam > 200:
+    toplam = urun1+(3/4*(urun2))
+    print(f"ürünlerin fiyatı {urun1} TL ve {urun2} TL'dir.\nİkinci ürüne {(1/4*(urun2))} TL indirim yapılmıştır. Borcunuz {toplam} TL dir.")
+
+else:
+    print(f"Borcunuz {toplam} TL dir.")
 """
+
+
 
 # ödev →
 """
@@ -119,3 +138,4 @@ else:
         - Aracınızın 100 km.'deki ortalama yakıt tütekimi kullanıcıdan alınacak
         - Anlık yakıt kuru internetten bakılabilir
 """
+d
