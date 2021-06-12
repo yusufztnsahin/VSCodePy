@@ -138,4 +138,4 @@ else:
         - Aracınızın 100 km.'deki ortalama yakıt tütekimi kullanıcıdan alınacak
         - Anlık yakıt kuru internetten bakılabilir
 """
-d
+d21

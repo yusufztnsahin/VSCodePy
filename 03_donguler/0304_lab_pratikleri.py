@@ -53,15 +53,16 @@ Aşağıdaki Pattern'i Python While Loop İle Yapınız
  * * * * * * * * * *
  $ $ $ $ $ $ $ $ $ $
 """
-"""i, j = 0, 0
-while i<10:
-    while j<10:
-        if i%2 ==0:
-            print(" * ", end= "")
+"""
+i, j = 0, 0
+while i < 10:
+    while j < 10:
+        if i % 2 == 0:
+            print(" * ", end="")
         else:
-            print(" $ ", end= "")
+            print(" $ ", end="")
         j += 1
-    i +=1
+    i += 1
     j = 0
     print()
 """

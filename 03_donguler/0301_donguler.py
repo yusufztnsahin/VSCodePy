@@ -32,7 +32,7 @@ while i<=3:
     i +=1
     print("b")
 print("c")
-""" 
+ """
 #endregion
 
 # region dikkat_edilmesi_gereken_kurallar
@@ -40,7 +40,7 @@ print("c")
 i = 1
 while i<3:   # i büyük 3 olduğu sürece DÖN   
     print("sponsorlu ürün")
-"""    
+"""
 # endregion
 
 # region ornek_1
