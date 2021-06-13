@@ -93,3 +93,30 @@ while i < 5:
     j = 0
     print()
 """
+"""
+eb, count = 0, 0
+while True:
+    sayi = int(input("Lütfen bir sayi giriniz,çıkmak için -1 giriniz: "))
+    if sayi == -1:
+        break
+    if sayi > eb:
+        eb = sayi
+    count += 1
+if count:
+    print(f"en büyük sayı {eb}")
+else:
+    print("hiç sayi girmediniz")
+"""
+"""
+tekSayilarToplami, count = 0, 0
+while True:
+    sayi = int(input("Lütfen sayi giriniz çıkmak için -1 giriniz: "))
+    if sayi == -1:
+        break
+    if sayi % 2 != 1:
+        print("tek sayi giriniz!")
+        continue
+    tekSayilarToplami += sayi
+    count += 1
+print(f"Girilen tek sayılarrın ortalaması {tekSayilarToplami/count} olur")
+"""
