@@ -35,12 +35,11 @@ while True:
         ogrenciListesi.remove(ogrenci)
     elif secim == 3:
         for i in ogrenciListesi:
-            print(i)
+            print(i, end=" ")
     elif secim == 4:
         break
     else:
         print("hatalı seçim")
-   
 """
 # endregion
 

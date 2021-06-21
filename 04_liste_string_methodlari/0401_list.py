@@ -47,7 +47,6 @@ print(sayilar)
 sayilar[1] = 34
 print(sayilar)
 """
-
 """
 sayilar = [11, 15, 7, 12]
 print(sayilar)
@@ -76,17 +75,16 @@ print(sayilar)
 del sayilar #intellisense
 print(sayilar)
 """
-
 # endregion
 
 # region for_loop_ile_oku
-"""
+
 sayilar = [12, 36, 9, 5, 3, 74]
 print("30 dan büyük olan sayıların listesi")
 for i in sayilar:
-    if i>30:
-        print(i)
-"""
+    if i > 30:
+        print(i, end=" ")
+
 # endregion
 
 # region for_loop_ile_liste_elemanlarını_topla
@@ -104,7 +102,7 @@ print(f"listedeki elamanları toplamı → {toplam}")
 adet = 0
 sayilar = [11, 15, 7, 12, 1, 15]
 for i in sayilar:
-    if i%2!=0:
+    if i % 2 != 0:
         adet += 1
 print(f"listedeki tek sayı adedi → {adet}")
 """

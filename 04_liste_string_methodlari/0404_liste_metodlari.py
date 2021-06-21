@@ -22,7 +22,7 @@ print(f"listemizin son hali → {meyveler}")
 """
 meyveler = ["elma", "armut", "muz", "ayva", "üzüm"]
 print(f"listemizin ilk hali → {meyveler}")
-meyveler.remove("muz")
+meyveler.remove("elma")
 #meyveler.remove("muzz")
 print(f"listemizin son hali → {meyveler}")
 """
@@ -97,6 +97,6 @@ print(f"listemizin son hali → {listeRakamlar}")
 # region index→arama_indeks_dondurme
 """
 listeRakamlar = [2, 5, 6, 1, 9, 7]
-print(listeRakamlar.index(10))
+print(listeRakamlar.index(9))
 """
 # endregion

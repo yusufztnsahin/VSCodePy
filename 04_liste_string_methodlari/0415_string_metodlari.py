@@ -59,9 +59,10 @@ print(kurum.capitalize())
 """
 parametrede belirttiğim harf, kelime neyse, string içinde kaç tane geçtiğini bulur.
 kurum = "Ecodation Eğitim Kurumları"
-print(kurum.count(("z")))
+print(kurum.count("o", 0, 8))
 print(kurum.count("i", 6, 8))
 """
+
 # endregion
 
 # region replace
@@ -135,6 +136,8 @@ print(kurum.rstrip())
 """
 rakam olup/olmadığını geriye döndürür. Eğer değer bir sayı ise, tüm rakamlarını kontrol ederek 
 True/False geriye döndürecek.
+"""
+"""
 deger = "1"
 print(deger.isdigit())
 deger = "1060"
@@ -210,7 +213,6 @@ print(deger.isidentifier())
 
 # region split
 """
-parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.
 kurum  = "Ecodation Eğitim Kurumları"
 print(kurum.split())
 kurum1  = "Ecodation Eğitim Kurumları. Python Kursuna Hoş Geldiniz"

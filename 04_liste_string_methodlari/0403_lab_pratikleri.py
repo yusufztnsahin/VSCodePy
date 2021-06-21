@@ -69,7 +69,6 @@ for i in range(len(ogrenciListesi)):
 # endregion
 
 
-
 # ödev →
 """
 ogrenciListesi = ["ali", "kemal", "mehmet", "mustafa"]
