@@ -47,8 +47,9 @@ print(4**4)
 print(2**4)
 print(16**0.5)
 print(16**(1/2))
-print(type(16**0.5))
+print(16**0.5)
 """
+
 # endregion
 
 # region // - tam bölme
@@ -86,7 +87,7 @@ print(2**2**3)  #** right-side binding
 """
 # endregion
 
-"""
+
 print(12/3)
 print(12/3.0)
 print(12/5)
@@ -95,4 +96,4 @@ print(.4*4)
 print(25**.5)
 print(12%5)
 print(-12%5)
-"""
+

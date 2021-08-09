@@ -86,4 +86,7 @@ lokasyon = {
     ]
 }
 
-print(lokasyon["results"][0]["locations"][0]["latLng"])
+print(lokasyon["results"])
+
+
+#print(lokasyon["results"][0]["locations"][0]["latLng"])

@@ -72,19 +72,19 @@ del sayilar[1]
 print(sayilar)
 [11, 15, 7, 12, 15]
 [11, 7, 12, 15]
-del sayilar #intellisense
+del sayilar
 print(sayilar)
 """
 # endregion
 
 # region for_loop_ile_oku
-
+"""
 sayilar = [12, 36, 9, 5, 3, 74]
 print("30 dan büyük olan sayıların listesi")
 for i in sayilar:
     if i > 30:
         print(i, end=" ")
-
+"""
 # endregion
 
 # region for_loop_ile_liste_elemanlarını_topla
