@@ -84,17 +84,36 @@ def musteriAra(musteriId):
 # 17 → Siparişleri listeleyelim    
 def siparisListele():  
     print("Sipariş Listesi")
-    print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
-    print("|ID      |CustomerId             |OrderDate              |ShipAddress            |ShipCity               |ShipCountry            |")
-    print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
+    print("+--------+-----------------------+-------------------------------+-----------------------+-----------------------+-----------------------+")
+    print("|ID      |CustomerId             |OrderDate                      |ShipAddress            |ShipCity               |ShipCountry            |")
+    print("+--------+-----------------------+-------------------------------+-----------------------+-----------------------+-----------------------+")
     for i in jsonOrders["results"]:
-        epochSaniye = i['order']['orderDate'][6:18]
-        #cst=int(epochSaniye)
-        #print(datetime.utcfromtimestamp(cst).strftime('%Y-%m-%d %H:%M:%S'))
-        print(f"+{'-'*8}+{'-'*23}+{'-'*23}+{'-'*23}+{'-'*23}+{'-'*23}+\n|{i['order']['id']}\t |{metinKontrol(i['order']['customerId'])}\t |{metinKontrol(epochSaniye)}\t |{metinKontrol(i['order']['shipAddress'])}\t |{metinKontrol(i['order']['shipCity'])}\t |{metinKontrol(i['order']['shipCountry'])}")
-    print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
+        epochSaniye = int(i['order']["orderDate"][6:15])
+        gunumuzZamani = time.ctime(epochSaniye)
+        print(f"+{'-'*8}+{'-'*23}+{'-'*31}+{'-'*23}+{'-'*23}+{'-'*23}+\n|{i['order']['id']}\t |{metinKontrol(i['order']['customerId'])}\t |{(gunumuzZamani)}\t |{metinKontrol(i['order']['shipAddress'])}\t |{metinKontrol(i['order']['shipCity'])}\t |{metinKontrol(i['order']['shipCountry'])}")
+    print("+--------+-----------------------+-------------------------------+-----------------------+-----------------------+-----------------------+")
 
 
+# 18 → Sipariş Id'ye göre arama yapalım
+def siparisAra(siparisId):
+    for i in jsonOrders["results"]:
+        if i['order']['id']==siparisId:
+            epochSaniye = int(i['order']["orderDate"][6:15])
+            gunumuzZamani = time.ctime(epochSaniye)
+            print(f"{siparisId} ID'li sipariş bulundu. Detay Listesi")
+            print("==========================")
+            print(f"{metinKontrol('Sipariş Id')}\t\t:{i['order']['id']}\n{metinKontrol('Müşteri Id')}\t\t:{i['order']['customerId']}\n{metinKontrol('Firma Adı ')}\t\t:{i['order']['shipName']}\n{metinKontrol('Sipariş Tarihi')}\t\t:{gunumuzZamani}\n{metinKontrol('Adres')}\t\t:{i['order']['shipAddress']}\n{metinKontrol('Şehir')}\t\t:{i['order']['shipCity']}\n{metinKontrol('Ülke')}\t\t:{i['order']['shipCountry']}") 
+            nereye = i['order']['shipCity']          
+            cevap = input(f"Kargo Rotasını {nereye.upper()} Şehri İçin Görmek İster misiniz? [e/E] :")
+            if cevap.lower()=="e":
+                while True:                    
+                    print(f"Varış Noktası {nereye} için Rota Hesaplanacak")
+                    nereden = input("Nereden Çıkacak: ")
+                    #<MapQuest API'yı Kullanarak Rota Belirlenecek>
+                    break
+            break
+    else:
+        print(f"{siparisId} ID'li sipariş bulunamadı")
 
 # 19 → menu
 while True:
@@ -116,7 +135,8 @@ while True:
     elif secim==3:
         siparisListele()
     elif secim==4:
-        pass
+        siparis = int(input("Aranan Siparis Id Giriniz      :"))
+        siparisAra(siparis)
     elif secim==5:
         break
     else:
