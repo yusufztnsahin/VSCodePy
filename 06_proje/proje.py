@@ -109,7 +109,16 @@ def siparisAra(siparisId):
                 while True:                    
                     print(f"Varış Noktası {nereye} için Rota Hesaplanacak")
                     nereden = input("Nereden Çıkacak: ")
-                    #<MapQuest API'yı Kullanarak Rota Belirlenecek>
+                    rRoute = requests.get(f"https://www.mapquestapi.com/directions/v2/route?key=zYjDkhh9092lQJQy54YbnXCaldm4QMr7&from={nereden}&to={nereye}")
+                    jsonRoute = rRoute.json()
+                    print("=============================================")
+                    print(f"Kargo Rotası {nereden.upper()} den/dan {nereye.upper()} e/a")
+                    print(f"Kilometre:\t\t{jsonRoute['route']['legs'][0]['distance']}")
+                    print(f"Toplam Süre:\t\t{jsonRoute['route']['legs'][0]['formattedTime']}")
+                    print("=============================================")
+                    for i in jsonRoute["route"]['legs'][0]['maneuvers']:
+                        print(f"{i['narrative']}  ({i['distance']})")
+                    print("=============================================")
                     break
             break
     else:
