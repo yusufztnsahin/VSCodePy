@@ -1,17 +1,15 @@
-# 1 → Kütüphaneleri import edelim
+# 1 → Kütüphaneler
 import json
 import time
 import requests
-import urllib.parse
-from datetime import datetime
 
-# 2 → Customers API için gerekli URL girelim
+# 2 → Customers API için gerekli URL
 urlCustomers = "https://northwind.netcore.io/customers?format=json"
 
 # 3 → Customers API için GET request
 rCustomers = requests.get("https://northwind.netcore.io/customers?format=json")
 
-# 4 → if  case, bu kısımda her hangi bir kod değişikliği yapmayın lütfen
+# 4 → if  case
 if not rCustomers.status_code == 200:
     raise Exception("API Bağlantı Sorunu. Status code: {}. Text: {}".format(
         rCustomers.status_code, rCustomers.text))
@@ -20,16 +18,16 @@ if not rCustomers.status_code == 200:
 # 5 → Response içeriği print et referans amaçlı
 #print(rCustomers.text)
 
-# 6 → Response icerigi json data formatına encode et
+# 6 → Response icerigi json data formatına encoding
 jsonCustomers = json.loads(rCustomers.text)
 
-# 7 → Orders API için gerekli URL'leri girelim
+# 7 → Orders API için gerekli URL
 urlOrders = "https://northwind.netcore.io/orders?format=json"
 
 # 8 → Orders API için GET request
 rOrders = requests.get("https://northwind.netcore.io/orders?format=json")
 
-# 9 → if  case, bu kısımda her hangi bir kod değişikliği yapmayın lütfen
+# 9 → if  case
 if not rOrders.status_code == 200:
     raise Exception("API Bağlantı Sorunu. Status code: {}. Text: {}".format(
         rOrders.status_code, rOrders.text))
@@ -37,17 +35,17 @@ if not rOrders.status_code == 200:
 # 10 → Response içeriği print et referans amaçlı
 #print(rOrders.text)
 
-# 11 → response icerigi json data formatına encode et
+# 11 → response icerigi json data formatına encoding
 jsonOrders = json.loads(rOrders.text)
 
-# 12 → Mapquest API için gerekli URL'leri girelim
-mainMapApiUrl = "https://www.mapquestapi.com/geocoding/v1/address?key=zYjDkhh9092lQJQy54YbnXCaldm4QMr7&location=istanbul"
+# 12 → Mapquest API için gerekli URL
+mainMapApiUrl = "http://www.mapquestapi.com/directions/v2/route?key=KEY&from=Clarendon Blvd,Arlington,VA&to=2400+S+Glebe+Rd,+Arlington,+VA"
 
-# 13 → Mapquest Credential için; token, key... hazırlıkları yapalım
+# 13 → Mapquest Credential için; token, key
 mapApiKey = "zYjDkhh9092lQJQy54YbnXCaldm4QMr7"
 
 
-# 14 → UI manipulasyonu. Output anında 15 karakterden uzun metinler için manipulasyon yapalım
+# 14 → UI manipulasyonu
 def metinKontrol(metin):
     if len(metin) > 15:
         return f"{metin[:15]}..."
@@ -57,7 +55,7 @@ def metinKontrol(metin):
     else:
         return f"{metin[:]}      "
 
-# 15 → Müşterileri listeleyelim
+# 15 → Müşterileri listeleme
 def musteriListele():
     print("Müşteri Listesi")
     print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
@@ -69,7 +67,7 @@ def musteriListele():
 
     print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
 
-# 16 → Müşterileri Id'ye göre arama yapalım
+# 16 → Müşterileri Id'ye göre arama
 def musteriAra(musteriId):
     for i in jsonCustomers["results"]:
         if i['id']==musteriId:
@@ -81,7 +79,7 @@ def musteriAra(musteriId):
         print(f"{musteriId} ID'li müşteri bulunamadı")
         
         
-# 17 → Siparişleri listeleyelim    
+# 17 → Siparişleri listeleme   
 def siparisListele():  
     print("Sipariş Listesi")
     print("+--------+-----------------------+-------------------------------+-----------------------+-----------------------+-----------------------+")
@@ -94,7 +92,7 @@ def siparisListele():
     print("+--------+-----------------------+-------------------------------+-----------------------+-----------------------+-----------------------+")
 
 
-# 18 → Sipariş Id'ye göre arama yapalım
+# 18 → Sipariş Id'ye göre arama
 def siparisAra(siparisId):
     for i in jsonOrders["results"]:
         if i['order']['id']==siparisId:
@@ -117,7 +115,7 @@ def siparisAra(siparisId):
                     print(f"Toplam Süre:\t\t{jsonRoute['route']['legs'][0]['formattedTime']}")
                     print("=============================================")
                     for i in jsonRoute["route"]['legs'][0]['maneuvers']:
-                        print(f"{i['narrative']}  ({i['distance']})")
+                        print(f"{i['narrative']}  ({i['distance']} km)")
                     print("=============================================")
                     break
             break
